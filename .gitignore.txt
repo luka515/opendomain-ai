@@ -1,0 +1,33 @@
+# 敏感环境文件
+*.env
+.env.local
+.env.prod
+
+# Python环境
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+poetry.lock（后续补充代码时再上传，当前放示例可忽略）
+
+# Node.js环境
+node_modules/
+dist/
+build/
+*.lock（除了package-lock.json.example）
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志/缓存
+*.log
+tmp/
+cache/
+
+# Docker临时文件
+*.dockerignore
+docker-compose.override.yml

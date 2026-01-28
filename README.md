@@ -1,23 +1,26 @@
 # OpenDomain AI
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/{luka515}/opendomain-ai.svg?style=social)](https://github.com/{luka515}/opendomain-ai)
+[![GitHub Forks](https://img.shields.io/github/forks/{luka515}/opendomain-ai.svg?style=social)](https://github.com/{luka515}/opendomain-ai)
 
-## 项目愿景
-打造一款开源、轻量化、可扩展的AI+私域运营框架，让中小团队和开发者能快速搭建自己的AI私域工具，实现「技术普惠、社区共建」。
+### 一款**轻量化、可扩展、合规化**的开源AI+私域运营框架
+聚焦「企微私域+大模型AI」核心场景，为中小团队/开发者提供低门槛的AI私域工具开发底座，实现**技术普惠、社区共建**。
 
-## 核心价值
-1.  **轻量化**：一键部署，不依赖重型商业组件，降低开发/使用门槛
-2.  **高兼容**：支持多开源大模型（DeepSeek/Qwen/ChatGLM）、多私域平台（企微/抖音/视频号）
-3.  **可扩展**：插件化架构，方便开发者二次开发、新增功能
-4.  **合规化**：内置私域运营合规工具，适配最新行业规范
+## 🚀 核心价值
+✅ **轻量化**：Docker一键部署，不依赖重型商业组件，30分钟上手  
+✅ **高兼容**：原生支持DeepSeek/Qwen/ChatGLM开源大模型，后续对接多私域平台  
+✅ **可扩展**：插件化架构设计，预留多场景扩展接口，二次开发成本低  
+✅ **合规化**：内置私域运营合规工具，适配最新数据隐私/AI内容标注规范  
+✅ **社区共建**：全程开源，接受开发者PR/Issue，一起打造实用的AI+私域框架
 
-## 项目路线图（Roadmap）
-参考 [docs/roadmap.md](docs/roadmap.md)
-
-## 架构设计
-参考 [docs/architecture.md](docs/architecture.md)
-
-## 如何参与共建
-参考 [docs/contribution.md](docs/contribution.md)
-
-## 联系方式
-- GitHub Discussions：[可直接点击讨论]
-- 开发者交流群：[创建中]
+## 🏗️ 项目架构（MVP版）
+```mermaid
+graph TD
+    A[企微用户] --> B[企微开放API]
+    B --> C[OpenDomain AI 后端<br/>Python+FastAPI]
+    C --> D[AI核心层<br/>DeepSeek+LangChain]
+    C --> E[数据层<br/>PostgreSQL+Redis]
+    D --> C
+    C --> F[前端管理后台<br/>Vue3+Element Plus]
+    G[开发者] --> H[二次开发/插件开发]
+    H --> C

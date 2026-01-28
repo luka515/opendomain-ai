@@ -26,5 +26,5 @@
 -  Commit信息：遵循「类型: 描述」格式（如feat: 新增AI客服上下文记忆功能）
 
 ## 联系方式
--GitHub讨论：[仓库讨论链接]
--  开发者交流群（可选）：[补充你的群号/二维码]
+-GitHub讨论：(https://github.com/luka515/opendomain-ai/discussions)]
+-  开发者交流群（可选）：[暂无，正在创建]

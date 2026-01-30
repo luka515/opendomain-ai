@@ -33,7 +33,7 @@ chmod +x ./scripts/deploy.sh
 后端接口文档：http://localhost:8000/docs
 健康检查：http://localhost:8000/health
 
-🏗️ 项目架构（MVP 版）
+### 🏗️ 项目架构（MVP 版）
 企微用户
 
 企微开放API
@@ -54,7 +54,7 @@ Vue3+Element Plus
 
 二次开发/插件开发
 
-📚 核心功能
+### 📚 核心功能
 1. AI 智能对话
 支持 DeepSeek/Qwen/ChatGLM 开源大模型
 对话历史缓存（Redis），支持上下文管理
@@ -67,7 +67,7 @@ AI 生成内容自动标注，符合合规要求
 自定义插件开发规范
 内置客户标签、合规检测、内容生成插件
 
-🔧 二次开发指南
+### 🔧 二次开发指南
 插件开发
 继承PluginBase基类，实现execute方法
 使用@register_plugin装饰器注册插件
@@ -77,7 +77,7 @@ AI 生成内容自动标注，符合合规要求
 使用@register_llm装饰器注册模型
 在config.yaml中配置新模型路径和参数
 
-🤝 社区共建
+### 🤝 社区共建
 提交 PR：请遵循贡献指南
 提交 Issue：使用Issue 模板
 交流群：待补充
